@@ -9,5 +9,9 @@
 <br>
 
 Результат коду:
+
 ![Java](/img/lab1_java.png)
+
 ![C#](/img/lab1_csharp.png)
+
+__
