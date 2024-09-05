@@ -4,11 +4,11 @@
 
 <br>
 
-![Java icon](/img/icons/java_icon.png) **Java**: ![java code](https://github.com/Nikkkt/OOP-KPI-Labs/blob/main/Lab1/Lab1%20Java/src/NumberOperations.java): Код
+![Java icon](/img/icons/java_icon.png) **Java**: ![Код](https://github.com/Nikkkt/OOP-KPI-Labs/blob/main/Lab1/Lab1%20Java/src/NumberOperations.java)
 
 <br>
 
-![C# icon](/img/icons/csharp_icon.png) **C#**: ![C# code](https://github.com/Nikkkt/OOP-KPI-Labs/blob/main/Lab1/Lab1%20C%23/NumberOperations.cs): Код
+![C# icon](/img/icons/csharp_icon.png) **C#**: ![Код](https://github.com/Nikkkt/OOP-KPI-Labs/blob/main/Lab1/Lab1%20C%23/NumberOperations.cs)
 
 <br>
 
