@@ -15,3 +15,23 @@
 Результат коду:
 ![Java](/img/lab1_java.png)
 ![C#](/img/lab1_csharp.png)
+
+<br>
+
+# Lab 2
+
+Код:
+
+<br>
+
+![Java icon](/img/icons/java_icon.png) **Java**: ![java code](): Код
+
+<br>
+
+![C# icon](/img/icons/csharp_icon.png) **C#**: ![C# code](): Код
+
+<br>
+
+Результат коду:
+![Java](/img/lab2_java.png)
+![C#](/img/lab2_csharp.png)

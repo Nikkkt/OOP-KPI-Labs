@@ -5,3 +5,10 @@ C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\obj\Debug\Lab1 C#.
 C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\obj\Debug\Lab1 C#.csproj.CoreCompileInputs.cache
 C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\obj\Debug\Lab1 C#.exe
 C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\obj\Debug\Lab1 C#.pdb
+C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\bin\Debug\Extreme.Numerics.dll
+C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\bin\Debug\System.ValueTuple.dll
+C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\bin\Debug\Extreme.Numerics.xml
+C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\bin\Debug\System.ValueTuple.xml
+C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\obj\Debug\Lab1 C#.csproj.Up2Date
+C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\bin\Debug\ExtendedNumerics.BigDecimal.dll
+C:\Users\nikit\Desktop\Programming\Java\KPI Labs\Lab1\Lab1 C#\bin\Debug\ExtendedNumerics.BigDecimal.xml

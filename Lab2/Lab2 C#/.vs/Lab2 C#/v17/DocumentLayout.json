@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C45ABD85-906F-4CB7-83FB-817AFA2F7DF8}|Lab2 C#.csproj|c:\\users\\nikit\\desktop\\programming\\java\\kpi labs\\lab2\\lab2 c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C45ABD85-906F-4CB7-83FB-817AFA2F7DF8}|Lab2 C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C45ABD85-906F-4CB7-83FB-817AFA2F7DF8}|Lab2 C#.csproj|C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\breastplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C45ABD85-906F-4CB7-83FB-817AFA2F7DF8}|Lab2 C#.csproj|solutionrelative:breastplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C45ABD85-906F-4CB7-83FB-817AFA2F7DF8}|Lab2 C#.csproj|C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\helmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C45ABD85-906F-4CB7-83FB-817AFA2F7DF8}|Lab2 C#.csproj|solutionrelative:helmet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C45ABD85-906F-4CB7-83FB-817AFA2F7DF8}|Lab2 C#.csproj|C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C45ABD85-906F-4CB7-83FB-817AFA2F7DF8}|Lab2 C#.csproj|solutionrelative:armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Breastplate.cs",
+              "DocumentMoniker": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\Breastplate.cs",
+              "RelativeDocumentMoniker": "Breastplate.cs",
+              "ToolTip": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\Breastplate.cs",
+              "RelativeToolTip": "Breastplate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:57:55.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Helmet.cs",
+              "DocumentMoniker": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\Helmet.cs",
+              "RelativeDocumentMoniker": "Helmet.cs",
+              "ToolTip": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\Helmet.cs",
+              "RelativeToolTip": "Helmet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:50:19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Armor.cs",
+              "DocumentMoniker": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\Armor.cs",
+              "RelativeDocumentMoniker": "Armor.cs",
+              "ToolTip": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\Armor.cs",
+              "RelativeToolTip": "Armor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:47:53.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\nikit\\Desktop\\Programming\\Java\\KPI Labs\\Lab2\\Lab2 C#\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:39:19.778Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

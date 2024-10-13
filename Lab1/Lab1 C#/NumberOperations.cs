@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+//using Extreme.Mathematics;
+using System.Numerics;
+using Extreme.Mathematics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,6 +78,11 @@ namespace Lab1_C_
             List<dynamic> doubledNumbers = new List<dynamic>();
             foreach (dynamic number in numbers) doubledNumbers.Add(number * 2);
             Console.WriteLine($"Числа помноженi на 2: {String.Join("; ", doubledNumbers.ToArray())}");
+
+            System.Numerics.BigInteger bigNumber = System.Numerics.BigInteger.Parse("100000000000000000000");
+            ExtendedNumerics.BigDecimal bigDouble = ExtendedNumerics.BigDecimal.Parse("12345678901234567890,123456789");
+
+            Console.WriteLine(bigNumber + bigDouble);
         }
     }
 }

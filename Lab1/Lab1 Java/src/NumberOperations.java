@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -5,9 +7,7 @@ import java.util.List;
 public class NumberOperations {
 
     public static void main(String[] args) {
-        ArrayList<Number> numbers = new ArrayList<Number>(
-            Arrays.asList(10, 20.5, 30, 40.7, 50, 60.3, 70, 80.1, 90, 100.9)
-        );
+        ArrayList<Number> numbers = new ArrayList<Number>(Arrays.asList(10, 20.5, 30, 40.7, 50, 60.3, 70, 80.1, 90, 100.9));
 
         // Завдання
         // 1. Створіть числа різних типів
@@ -92,5 +92,14 @@ public class NumberOperations {
         }
         System.out.print("Числа помножені на 2: ");
         System.out.println(doubledNumbers);
+        for (Number number : doubledNumbers) {
+            System.out.print(String.format("%.2f", number.doubleValue()) + " ");
+        }
+
+        BigInteger number1 = new BigInteger("100000000000000");
+        BigDecimal number2 = new BigDecimal("100000.123456789");
+
+        BigDecimal number3 = new BigDecimal(number1);
+        System.out.println(number2.add(number3));
     }
 }
