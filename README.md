@@ -7,8 +7,8 @@
 <br>
 Результат коду:
 <br>
-<img src="/img/lab1_java.png" alt="Java result" width="150"/>
-<img src="/img/lab1_csharp.png" alt="C# result" width="150"/>
+<img src="/img/lab1_java.png" alt="Java result"/>
+<img src="/img/lab1_csharp.png" alt="C# result"/>
 
 <br>
 
