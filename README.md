@@ -1,9 +1,9 @@
 # Lab 1
 Код:
 <br>
-<img src="/img/icons/java_icon.png" alt="Java icon" width="24"/> **Java**: [Код](https://github.com/Nikkkt/OOP-KPI-Labs/blob/main/Lab1/Lab1%20Java/src/NumberOperations.java)
+<img src="/img/icons/java_icon.png" alt="Java icon" width="24"/>: [Код](https://github.com/Nikkkt/OOP-KPI-Labs/blob/main/Lab1/Lab1%20Java/src/NumberOperations.java)
 <br>
-<img src="/img/icons/csharp_icon.png" alt="C# icon" width="24"/> **C#**: [Код](https://github.com/Nikkkt/OOP-KPI-Labs/blob/main/Lab1/Lab1%20C%23/NumberOperations.cs)
+<img src="/img/icons/csharp_icon.png" alt="C# icon" width="24"/>: [Код](https://github.com/Nikkkt/OOP-KPI-Labs/blob/main/Lab1/Lab1%20C%23/NumberOperations.cs)
 <br>
 Результат коду:
 <br>
@@ -13,19 +13,13 @@
 <br>
 
 # Lab 2
-
 Код:
-
 <br>
-
-![Java icon](/img/icons/java_icon.png) **Java**: ![java code](): Код
-
+<img src="/img/icons/java_icon.png" alt="Java icon" width="24"/>: [Код](https://github.com/Nikkkt/OOP-KPI-Labs/tree/main/Lab2/Lab2%20Java/src)
 <br>
-
-![C# icon](/img/icons/csharp_icon.png) **C#**: ![C# code](): Код
-
+<img src="/img/icons/csharp_icon.png" alt="C# icon" width="24"/>: [Код](https://github.com/Nikkkt/OOP-KPI-Labs/tree/main/Lab2/Lab2%20C%23)
 <br>
-
 Результат коду:
-![Java](/img/lab2_java.png)
-![C#](/img/lab2_csharp.png)
+<br>
+<img src="/img/lab2_java.png" alt="Java result"/>
+<img src="/img/lab2_csharp.png" alt="C# result"/>
