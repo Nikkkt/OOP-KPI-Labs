@@ -1,36 +1,17 @@
 package main;
 
 public class ItemUpdater {
-    private final ItemCollection itemCollection;
+    private final Item item;
 
-    public ItemUpdater(ItemCollection itemCollection) {
-        this.itemCollection = itemCollection;
+    public ItemUpdater(Item item) {
+        this.item = item;
     }
 
-    public void updateAllItemsQuality() {
-        for (Item item : itemCollection.getItems()) {
-            updateItemQuality(item);
-        }
-    }
-
-    private void updateItemQuality(Item item) {
-        boolean isSpecialItem = isSpecialItem(item);
-
-        if (isSpecialItem) {
-            updateSpecialItemQuality(item);
-            return;
-        }
-
-        Quality itemQuality = item.getItemQuality();
-        itemQuality.decrease();
-
-        if (!item.getItemName().equals("Sulfuras, Hand of Ragnaros")) {
-            SellIn sellInDays = item.getSellInDays();
-            sellInDays.decrement();
-        }
-
-        if (item.getSellInDays().getValue() < 0) {
-            handleExpiredItemQuality(item);
+    public void updateQuality() {
+        if (isSpecialItem(item)) {
+            updateSpecialItemQuality();
+        } else {
+            updateRegularItemQuality();
         }
     }
 
@@ -39,46 +20,54 @@ public class ItemUpdater {
         return name.equals("Aged Brie") || name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 
-    private void updateSpecialItemQuality(Item item) {
+    private void updateRegularItemQuality() {
+        Quality itemQuality = item.getItemQuality();
+        itemQuality.decrease();
+
+        if (!item.getItemName().equals("Sulfuras, Hand of Ragnaros")) {
+            item.getSellInDays().decrement();
+        }
+
+        if (item.getSellInDays().getValue() < 0) {
+            handleExpiredItemQuality();
+        }
+    }
+
+    private void updateSpecialItemQuality() {
         Quality itemQuality = item.getItemQuality();
         itemQuality.increase();
 
         if (item.getItemName().equals("Backstage passes to a TAFKAL80ETC concert")) {
-            increaseQualityForBackstagePass(item);
+            increaseQualityForBackstagePass();
         }
     }
 
-    private void increaseQualityForBackstagePass(Item item) {
+    private void increaseQualityForBackstagePass() {
         SellIn sellInDays = item.getSellInDays();
 
         if (sellInDays.getValue() < 11) {
-            Quality itemQuality = item.getItemQuality();
-            itemQuality.increase();
+            item.getItemQuality().increase();
         }
         if (sellInDays.getValue() < 6) {
-            Quality itemQuality = item.getItemQuality();
-            itemQuality.increase();
+            item.getItemQuality().increase();
         }
     }
 
-    private void handleExpiredItemQuality(Item item) {
+    private void handleExpiredItemQuality() {
         String itemName = item.getItemName();
 
         if (itemName.equals("Aged Brie")) {
-            Quality itemQuality = item.getItemQuality();
-            itemQuality.increase();
+            item.getItemQuality().increase();
             return;
         }
 
         if (itemName.equals("Backstage passes to a TAFKAL80ETC concert")) {
-            Quality itemQuality = item.getItemQuality();
-            itemQuality.decrease();
+            item.getItemQuality().decrease();
             return;
         }
 
         if (item.getItemQuality().getValue() > 0 && !itemName.equals("Sulfuras, Hand of Ragnaros")) {
-            Quality itemQuality = item.getItemQuality();
-            itemQuality.decrease();
+            item.getItemQuality().decrease();
         }
     }
 }
