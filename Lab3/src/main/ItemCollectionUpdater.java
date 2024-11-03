@@ -8,7 +8,7 @@ public class ItemCollectionUpdater {
     }
 
     public void updateAllItemsQuality() {
-        for (Item item : itemCollection.getItems()) {
+        for (Item item : itemCollection.itemList) {
             ItemUpdater itemUpdater = new ItemUpdater(item);
             itemUpdater.updateQuality();
         }
