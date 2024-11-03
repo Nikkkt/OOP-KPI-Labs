@@ -1,9 +1,7 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Create immutable list of armors
         List<Armor> armors = List.of(
                 new Helmet(1.5, 150, "Steel Helmet"),
                 new Breastplate(4.0, 250, "Iron Breastplate"),
@@ -13,16 +11,17 @@ public class Main {
                 new Breastplate(1.2, 100, "Golden Breastplate")
         );
 
-        // Calculate total cost of all armors
         double totalCost = armors.stream().mapToDouble(Armor::getPrice).sum();
         System.out.println("Total cost of equipment: $" + totalCost);
 
-        // Sort and display armors by weight
+//        armors.stream()
+//                .sorted(Comparator.comparingDouble(Armor::getWeight))
+//                .forEach(Main::printArmor);
+
         armors.stream()
-                .sorted(Comparator.comparingDouble(Armor::getWeight))
+                .sorted(Comparator.comparingDouble(Armor::getWeight).reversed())
                 .forEach(Main::printArmor);
 
-        // User input handling with exception catching
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.print("\nEnter minimum price: ");
@@ -30,7 +29,6 @@ public class Main {
             System.out.print("Enter maximum price: ");
             double maxPrice = scanner.nextDouble();
 
-            // Filter armors by price range
             List<Armor> filteredArmors = armors.stream()
                     .filter(a -> a.getPrice() >= minPrice && a.getPrice() <= maxPrice)
                     .toList();
@@ -41,12 +39,10 @@ public class Main {
             System.out.println("Please enter valid numbers for the price.");
         }
 
-        // Equip all armors
         System.out.println("\nEquipping armor:");
         armors.forEach(Armor::equip);
     }
 
-    // Method to print armor details
     public static void printArmor(Armor armor) {
         System.out.println(armor.getName() + " (Weight: " + armor.getWeight() + " kg, Price: $" + armor.getPrice() + ")");
     }

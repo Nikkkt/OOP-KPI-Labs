@@ -5,6 +5,6 @@ public class Helmet extends Armor {
 
     @Override
     public void equip() {
-        System.out.println("You equipped the helmet.");
+        System.out.println("You equipped the helmet");
     }
 }

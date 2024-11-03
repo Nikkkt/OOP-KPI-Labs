@@ -21,6 +21,5 @@ abstract class Armor {
         return price;
     }
 
-    // Abstract method to be implemented by concrete armor types
     public abstract void equip();
 }

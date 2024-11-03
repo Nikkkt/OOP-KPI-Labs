@@ -24,6 +24,17 @@ namespace Lab2_C_
             Console.WriteLine($"Total cost of equipment: ${totalCost}");
 
             var sortedArmors = armors.OrderBy(armor => armor.Weight);
+            Console.Write($"The heaviest: ");
+            PrintArmor(sortedArmors.LastOrDefault());
+
+            var maxWeight = armors.Max(armor => armor.Weight);
+            var heaviestArmor = armors.First(armor => armor.Weight == maxWeight);
+            PrintArmor(heaviestArmor);
+
+            PrintArmor(armors.OrderByDescending(armor => armor.Weight).FirstOrDefault());
+
+            Console.WriteLine();
+
             foreach (var armor in sortedArmors)
             {
                 PrintArmor(armor);

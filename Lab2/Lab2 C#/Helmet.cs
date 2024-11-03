@@ -12,7 +12,7 @@ namespace Lab2_C_
 
         public override void Equip()
         {
-            Console.WriteLine("You equipped the helmet.");
+            Console.WriteLine("You equipped the helmet");
         }
     }
 }

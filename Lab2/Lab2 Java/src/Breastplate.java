@@ -5,6 +5,6 @@ public class Breastplate extends Armor {
 
     @Override
     public void equip() {
-        System.out.println("You equipped the breastplate.");
+        System.out.println("You equipped the breastplate");
     }
 }
