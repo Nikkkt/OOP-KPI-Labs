@@ -1,17 +1,17 @@
 package main;
 
 public class SellIn {
-    private int value;
+    private int daysRemaining;
 
-    public SellIn(int value) {
-        this.value = value;
+    public SellIn(int daysRemaining) {
+        this.daysRemaining = daysRemaining;
     }
 
     public int getValue() {
-        return value;
+        return daysRemaining;
     }
 
     public void decrement() {
-        value--;
+        daysRemaining--;
     }
 }

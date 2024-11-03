@@ -1,30 +1,30 @@
 package main;
 
 public class Item {
-    private final String name;
-    private final SellIn sellIn;
-    private final Quality quality;
+    private final String itemName;
+    private final SellIn sellInDays;
+    private final Quality itemQuality;
 
-    public Item(String name, SellIn sellIn, Quality quality) {
-        this.name = name;
-        this.sellIn = sellIn;
-        this.quality = quality;
+    public Item(String itemName, SellIn sellInDays, Quality itemQuality) {
+        this.itemName = itemName;
+        this.sellInDays = sellInDays;
+        this.itemQuality = itemQuality;
     }
 
-    public String getName() {
-        return name;
+    public String getItemName() {
+        return itemName;
     }
 
-    public SellIn getSellIn() {
-        return sellIn;
+    public SellIn getSellInDays() {
+        return sellInDays;
     }
 
-    public Quality getQuality() {
-        return quality;
+    public Quality getItemQuality() {
+        return itemQuality;
     }
 
     @Override
     public String toString() {
-        return name + ", " + sellIn.getValue() + ", " + quality.getValue();
+        return itemName + ", " + sellInDays.getValue() + ", " + itemQuality.getValue();
     }
 }

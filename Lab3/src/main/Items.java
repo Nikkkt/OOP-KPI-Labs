@@ -1,88 +1,88 @@
 package main;
 
 public class Items {
-    private final Item[] items;
+    private final Item[] itemList;
 
-    public Items(Item[] items) {
-        this.items = items;
+    public Items(Item[] itemList) {
+        this.itemList = itemList;
     }
 
-    public void updateAll() {
-        for (Item item : items) {
+    public void updateAllItemsQuality() {
+        for (Item item : itemList) {
             updateItemQuality(item);
         }
     }
 
     private void updateItemQuality(Item item) {
-        boolean isSpecial = isSpecialItem(item);
+        boolean isSpecialItem = isSpecialItem(item);
 
-        if (isSpecial) {
-            updateSpecialItem(item);
+        if (isSpecialItem) {
+            updateSpecialItemQuality(item);
             return;
         }
 
-        Quality quality = item.getQuality();
-        quality.decrease();
+        Quality itemQuality = item.getItemQuality();
+        itemQuality.decrease();
 
-        if (!item.getName().equals("Sulfuras, Hand of Ragnaros")) {
-            SellIn sellIn = item.getSellIn();
-            sellIn.decrement();
+        if (!item.getItemName().equals("Sulfuras, Hand of Ragnaros")) {
+            SellIn sellInDays = item.getSellInDays();
+            sellInDays.decrement();
         }
 
-        if (item.getSellIn().getValue() < 0) {
-            handleExpiredItem(item);
+        if (item.getSellInDays().getValue() < 0) {
+            handleExpiredItemQuality(item);
         }
     }
 
     private boolean isSpecialItem(Item item) {
-        String name = item.getName();
+        String name = item.getItemName();
         return name.equals("Aged Brie") || name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 
-    private void updateSpecialItem(Item item) {
-        Quality quality = item.getQuality();
-        quality.increase();
+    private void updateSpecialItemQuality(Item item) {
+        Quality itemQuality = item.getItemQuality();
+        itemQuality.increase();
 
-        if (item.getName().equals("Backstage passes to a TAFKAL80ETC concert")) {
+        if (item.getItemName().equals("Backstage passes to a TAFKAL80ETC concert")) {
             increaseQualityForBackstagePass(item);
         }
     }
 
     private void increaseQualityForBackstagePass(Item item) {
-        SellIn sellIn = item.getSellIn();
+        SellIn sellInDays = item.getSellInDays();
 
-        if (sellIn.getValue() < 11) {
-            Quality quality = item.getQuality();
-            quality.increase();
+        if (sellInDays.getValue() < 11) {
+            Quality itemQuality = item.getItemQuality();
+            itemQuality.increase();
         }
-        if (sellIn.getValue() < 6) {
-            Quality quality = item.getQuality();
-            quality.increase();
-        }
-    }
-
-    private void handleExpiredItem(Item item) {
-        String name = item.getName();
-
-        if (name.equals("Aged Brie")) {
-            Quality quality = item.getQuality();
-            quality.increase();
-            return;
-        }
-
-        if (name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-            Quality quality = item.getQuality();
-            quality.decrease();
-            return;
-        }
-
-        if (item.getQuality().getValue() > 0 && !name.equals("Sulfuras, Hand of Ragnaros")) {
-            Quality quality = item.getQuality();
-            quality.decrease();
+        if (sellInDays.getValue() < 6) {
+            Quality itemQuality = item.getItemQuality();
+            itemQuality.increase();
         }
     }
 
-    public Item[] getItems() {
-        return items;
+    private void handleExpiredItemQuality(Item item) {
+        String itemName = item.getItemName();
+
+        if (itemName.equals("Aged Brie")) {
+            Quality itemQuality = item.getItemQuality();
+            itemQuality.increase();
+            return;
+        }
+
+        if (itemName.equals("Backstage passes to a TAFKAL80ETC concert")) {
+            Quality itemQuality = item.getItemQuality();
+            itemQuality.decrease();
+            return;
+        }
+
+        if (item.getItemQuality().getValue() > 0 && !itemName.equals("Sulfuras, Hand of Ragnaros")) {
+            Quality itemQuality = item.getItemQuality();
+            itemQuality.decrease();
+        }
+    }
+
+    public Item[] getItemList() {
+        return itemList;
     }
 }
