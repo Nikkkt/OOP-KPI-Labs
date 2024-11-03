@@ -14,14 +14,19 @@ public class Items {
     }
 
     private void updateItemQuality(Item item) {
-        if (isSpecialItem(item)) {
+        boolean isSpecial = isSpecialItem(item);
+
+        if (isSpecial) {
             updateSpecialItem(item);
             return;
         }
-        item.getQuality().decrease();
+
+        Quality quality = item.getQuality();
+        quality.decrease();
 
         if (!item.getName().equals("Sulfuras, Hand of Ragnaros")) {
-            item.getSellIn().decrement();
+            SellIn sellIn = item.getSellIn();
+            sellIn.decrement();
         }
 
         if (item.getSellIn().getValue() < 0) {
@@ -30,11 +35,13 @@ public class Items {
     }
 
     private boolean isSpecialItem(Item item) {
-        return item.getName().equals("Aged Brie") || item.getName().equals("Backstage passes to a TAFKAL80ETC concert");
+        String name = item.getName();
+        return name.equals("Aged Brie") || name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 
     private void updateSpecialItem(Item item) {
-        item.getQuality().increase();
+        Quality quality = item.getQuality();
+        quality.increase();
 
         if (item.getName().equals("Backstage passes to a TAFKAL80ETC concert")) {
             increaseQualityForBackstagePass(item);
@@ -42,27 +49,36 @@ public class Items {
     }
 
     private void increaseQualityForBackstagePass(Item item) {
-        if (item.getSellIn().getValue() < 11) {
-            item.getQuality().increase();
+        SellIn sellIn = item.getSellIn();
+
+        if (sellIn.getValue() < 11) {
+            Quality quality = item.getQuality();
+            quality.increase();
         }
-        if (item.getSellIn().getValue() < 6) {
-            item.getQuality().increase();
+        if (sellIn.getValue() < 6) {
+            Quality quality = item.getQuality();
+            quality.increase();
         }
     }
 
     private void handleExpiredItem(Item item) {
-        if (item.getName().equals("Aged Brie")) {
-            item.getQuality().increase();
+        String name = item.getName();
+
+        if (name.equals("Aged Brie")) {
+            Quality quality = item.getQuality();
+            quality.increase();
             return;
         }
 
-        if (item.getName().equals("Backstage passes to a TAFKAL80ETC concert")) {
-            item.getQuality().decrease();
+        if (name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+            Quality quality = item.getQuality();
+            quality.decrease();
             return;
         }
 
-        if (item.getQuality().getValue() > 0 && !item.getName().equals("Sulfuras, Hand of Ragnaros")) {
-            item.getQuality().decrease();
+        if (item.getQuality().getValue() > 0 && !name.equals("Sulfuras, Hand of Ragnaros")) {
+            Quality quality = item.getQuality();
+            quality.decrease();
         }
     }
 
